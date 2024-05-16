@@ -219,6 +219,12 @@
   box-shadow: 0 3.6rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 11px;
   overflow: hidden;
+  transition: all 0.5s;
+}
+
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.6rem 6.4rem rgba(0, 0, 0, 0.06);
 }
 
 .meal-content {
@@ -282,4 +288,31 @@
 
 .meal-img {
   width: 100%;
+}
+
+/* Not setting font size on link class,
+bcoz we might use the link class again */
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
 }
